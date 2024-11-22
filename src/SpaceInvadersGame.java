@@ -22,7 +22,7 @@ public class SpaceInvadersGame extends JPanel implements ActionListener, KeyList
     private Random random;
 
     public SpaceInvadersGame() {
-        this.setFocusable(true); //Menerima input keyboard
+        this.setFocusable(true); // Menerima input keyboard
         this.setPreferredSize(new Dimension(800, 600));
         this.addKeyListener(this);
 
@@ -45,7 +45,6 @@ public class SpaceInvadersGame extends JPanel implements ActionListener, KeyList
             int speed = random.nextInt(3) + 1; // Kecepatan acak (1-3)
             stars.add(new Star(x, y, speed));
         }
-
     }
 
     @Override
@@ -237,7 +236,7 @@ public class SpaceInvadersGame extends JPanel implements ActionListener, KeyList
         public Player(int x, int y, int speed) {
             super(x, y, speed);
             // Meng-load gambar spaceship
-            spaceshipImage = new ImageIcon("resources/images/Spaceship.png").getImage();
+            spaceshipImage = new ImageIcon("src/images/Spaceship.png").getImage();
         }
 
         public void setDirection(int dir) {
@@ -266,7 +265,7 @@ public class SpaceInvadersGame extends JPanel implements ActionListener, KeyList
         public Enemy(int x, int y, int speed) {
             super(x, y, speed);
             // Mengload gambar musuh
-            enemyImage = new ImageIcon("resources/images/Enemy.png").getImage(); // Replace with the correct path to your image
+            enemyImage = new ImageIcon("src/images/Enemy.png").getImage(); // Replace with the correct path to your image
         }
 
         @Override
@@ -337,7 +336,7 @@ public class SpaceInvadersGame extends JPanel implements ActionListener, KeyList
             super(x, y, 0); // Ledakan tidak bergeak jadi speed =0
             explosionFrames = new Image[6]; // 6 frame ledakan
             for (int i = 0; i < 6; i++) {
-                explosionFrames[i] = new ImageIcon("resources/images/explosion" + (i + 1) + ".png").getImage();
+                explosionFrames[i] = new ImageIcon("src/images/explosion" + (i + 1) + ".png").getImage();
             }
         }
 

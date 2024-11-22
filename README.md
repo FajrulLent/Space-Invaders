@@ -46,7 +46,7 @@ Proyek ini memiliki struktur direktori berikut:
 
 
 
-- **`src/`**: Berisi kode sumber utama game.
+- **`src/`**: Berisi source code game.
 - **`resources/`**:
   - **`images/`**: Berisi gambar seperti pesawat, musuh, dan animasi ledakan.
 - **`README.md`**: Dokumentasi proyek.
